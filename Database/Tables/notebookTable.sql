@@ -1,5 +1,6 @@
--- CREATE DATABASE Notebook;
+CREATE DATABASE Notebook;
 GO
+
 use Notebook;
 GO
 

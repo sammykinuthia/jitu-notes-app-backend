@@ -1,6 +1,5 @@
 import mssql from 'mssql'
 import { sqlConfig } from '../Config/config.js'
-import { log } from 'console'
 import { v4 } from 'uuid'
 
 
@@ -59,7 +58,7 @@ export const createPost = async (req, res) => {
             }
             else {
                 res.status(200).json({
-                    'data': record.recordset,
+                    'data': record,
                     "message": "Note created successifully"
                 })
             }

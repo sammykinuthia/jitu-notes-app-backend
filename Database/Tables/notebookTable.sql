@@ -1,10 +1,10 @@
-CREATE DATABASE Notebook;
-GO
+-- CREATE DATABASE Notebook;
+-- GO
 
 use Notebook;
 GO
 
-CREATE OR ALTER TABLE notes(
+CREATE TABLE notes(
     id VARCHAR(200) PRIMARY KEY,
     title VARCHAR(200) NOT null,
     content VARCHAR(MAX) NOT null,
